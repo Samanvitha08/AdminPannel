@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="AdminPanelSuite" parallel="false">
+
+    <!-- 🔥 Attach Listener (Extent + Screenshot) -->
+    <listeners>
+        <listener class-name="listener.TestListener"/>
+    </listeners>
+
+    <test name="FormTests">
+        <classes>
+            <class name="tests.FormTest"/>
+        </classes>
+    </test>
+
+    <test name="TableTests">
+        <classes>
+            <class name="tests.TableTest"/>
+        </classes>
+    </test>
+
+    <test name="AlertTests">
+        <classes>
+            <class name="tests.AlertTest"/>
+        </classes>
+    </test>
+
+    <test name="DynamicTests">
+        <classes>
+            <class name="tests.DynamicTest"/>
+        </classes>
+    </test>
+
+    <test name="FrameTests">
+        <classes>
+            <class name="tests.FrameTest"/>
+        </classes>
+    </test>
+
+</suite>
